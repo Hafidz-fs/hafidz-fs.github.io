@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Permintaan Maaf</title>
+  <link rel="stylesheet" href="./contentstyle.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>CISMIT</h1>
+    </div>
+    <div class="hero-image">
+      <img id="statusImage" src="../images/hamsterbg.png" alt="status">
+    </div>
+  </div>
+
+  <!-- TINGKAT RESPON + BUTTON -->
+  <div class="response-section">
+    <h5>Pilihan Mu..</h5>
+
+    <select id="forgivenessLevel">
+      <option value="">Jawaban..  ?</option>
+      <option value="dimaafkan">Dimaafkan</option>
+      <option value="menunggu">Menunggu</option>
+      <option value="tidak_dimaafkan">Tidak Dimaafkan</option>
+      <option value="tidak_mau">Tidak Mau Memaafkan</option>
+    </select>
+
+    <div class="button-group">
+      <button id="submitBtn">Submit</button>
+      <button id="deleteBtn">Delete</button>
+    </div>
+  </div>
+
+  <!-- PESAN YANG MUNCUL SETELAH SUBMIT -->
+  <div id="responseMessage" class="response-box">
+    Pesan akan muncul di sini setelah Submit diklik.
+  </div>
+
+  <!-- TEXT AREA UNTUK PESAN USER -->
+  <div class="message-box">
+    <label>Pesan.. : </label>
+    <textarea id="userMessage" placeholder="Tulis disini"></textarea>
+  </div>
+
+</div>
+<script src="./scripcontent.js"></script>
+</body>
+</html>
