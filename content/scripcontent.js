@@ -43,19 +43,19 @@ submitBtn.addEventListener("click", function(){
 
   if(level === "dimaafkan"){
     statusImage.src = "../images/happyham.png";
-    reply = "Beneraan...? Jadi jangan diam mulu dong..";
+    reply = "Anda dimaafkan selamat wkwkwk";
   }
   else if(level === "menunggu"){
     statusImage.src = "../images/waittingham.png";
-    reply = "ehmm.. okey aku cari cara lain";
+    reply = "ehmm.. coba lagi, anda kurang beruntung";
   }
   else if(level === "tidak_dimaafkan"){
     statusImage.src = "../images/sadham.png";
-    reply = "Kenapaa..?";
+    reply = "Kenapaa..? soo saddd";
   }
   else if(level === "tidak_mau"){
     statusImage.src = "../images/pasraham.png";
-    reply = "emm okay aku tunggu 3 tahun mungkin??";
+    reply = "selamat anda membuatnya marah";
   }
 
   responseBox.innerHTML = `

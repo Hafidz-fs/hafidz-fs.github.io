@@ -36,12 +36,34 @@
   </main>
   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
   <script>
-    var typed = new Typed('#element', {
-      strings: ["Web Multimedia", "Tugas UAS"],
-      typeSpeed: 200,
-      loop: true,
-      showCursor: false,
-    });
+    const typingSound = new Audio("images/typing.mp3");
+
+  // supaya suara bisa diputar berulang
+  typingSound.loop = true;
+
+  var typed = new Typed('#element', {
+    strings: ["Web Multimedia", "Tugas UAS"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true,
+    showCursor: false,
+
+    // saat mulai mengetik
+    preStringTyped: function() {
+      typingSound.currentTime = 0;
+      typingSound.play();
+    },
+
+    // saat selesai satu kalimat
+    onStringTyped: function() {
+      typingSound.pause();
+    },
+
+    // saat mulai menghapus
+    onLastStringBackspaced: function() {
+      typingSound.pause();
+    }
+  });
   </script>
 </body>
 </html> 
