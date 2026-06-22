@@ -71,3 +71,13 @@ deleteBtn.addEventListener("click", function(){
   responseBox.style.display = "none";
   statusImage.src = "sad.png";
 });
+
+function checkPassword(page){
+  const password = prompt("Masukkan password:");
+
+  if(password === "cismit123"){
+    window.location.href = page;
+  } else {
+    alert("Password salah!");
+  }
+}
