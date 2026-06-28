@@ -28,7 +28,7 @@ body{
 .navbar-cismit{
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 380px;
 }
 
 .navbar-cismit ul{

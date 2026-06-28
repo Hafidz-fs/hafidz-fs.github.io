@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cismit</title>
+    <link rel="stylesheet" href="./mainstyle.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/content/content.html">Home</a></li>
+      <li><a href="#">Audio</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="cismit">
+      <h1>Cismit</h1>
+      <img src="../happyham.png" alt="Cismit">
+    </div>
+    <div class="card">
+      <video  id="video" autoplay muted loop controls>
+        <source src="../Happy.mp4" type="video/mp4">
+      </video>
+      <h3>"Happy Ending"</h3>
+    </div>
+    </div>
+    <p class="desc">
+        "Aku pernah berpikir bahwa kesalahanku akan membuatku kehilanganmu selamanya. Setiap hari aku hidup dengan penyesalan, membayangkan bahwa pintu hatimu telah tertutup untukku. Namun ternyata, cintamu lebih besar daripada amarah dan kecewamu. Kamu memilih memaafkan ketika kamu memiliki alasan untuk pergi. Kamu memilih bertahan ketika kamu bisa saja menyerah. Maafmu adalah cahaya yang datang di saat aku berada dalam gelapnya penyesalan. Terima kasih karena telah memberiku kesempatan untuk kembali, bukan sebagai orang yang sama, tetapi sebagai seseorang yang ingin belajar mencintaimu dengan lebih baik."
+    </p>
+</body>
+<script>
+    const video = document.getElementById("video");
+
+    video.addEventListener("loadeddata", () => {
+        video.playbackRate = 0.;
+    });
+</script>
+</html>
