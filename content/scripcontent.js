@@ -43,7 +43,7 @@ submitBtn.addEventListener("click", function(){
 
   if(level === "dimaafkan"){
     statusImage.src = "../images/happyham.png";
-    reply = "Anda dimaafkan selamat wkwkwk";
+    reply = "Anda dimaafkan selamat wkwkwk password : Happycis";
   }
   else if(level === "menunggu"){
     statusImage.src = "../images/waittingham.png";
@@ -75,7 +75,7 @@ deleteBtn.addEventListener("click", function(){
 function checkPassword(page){
   const password = prompt("Masukkan password:");
 
-  if(password === "cismit123"){
+  if(password === "Happycis"){
     window.location.href = page;
   } else {
     alert("Password salah!");

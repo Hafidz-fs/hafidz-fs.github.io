@@ -6,9 +6,9 @@
 }
 
 body{
-  background: url(./images/bg-hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url(./images/bg-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav{
     width:100%;
@@ -48,17 +48,17 @@ nav a{
 }
 
 h1 {
-  color: rgb(246, 237, 237);
-  font-size: 50px;
+    color: rgb(246, 237, 237);
+    font-size: 50px;
 }
 h3 {
-  color: rgb(151, 0, 33);
-  margin-top: 8px;
-  font-size: 25px;
+    color: rgb(151, 0, 33);
+    margin-top: 8px;
+    font-size: 25px;
 }
 
 img {
-  width: 340px;
+    width: 340px;
 }
 
 .card{
