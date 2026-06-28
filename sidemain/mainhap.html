@@ -10,17 +10,17 @@
   <nav>
     <ul>
       <li><a href="/content/content.html">Home</a></li>
-      <li><a href="#">Audio</a></li>
+      <li><a href="../sidemain/mainsad.html">Audio</a></li>
     </ul>
   </nav>
   <div class="container">
     <div class="cismit">
       <h1>Cismit</h1>
-      <img src="../happyham.png" alt="Cismit">
+      <img src="../images/happyham.png" alt="Cismit">
     </div>
     <div class="card">
       <video  id="video" autoplay muted loop controls>
-        <source src="../Happy.mp4" type="video/mp4">
+        <source src="../images/Happy.mp4" type="video/mp4">
       </video>
       <h3>"Happy Ending"</h3>
     </div>
@@ -33,7 +33,7 @@
     const video = document.getElementById("video");
 
     video.addEventListener("loadeddata", () => {
-        video.playbackRate = 0.;
+        video.playbackRate = 0.8;
     });
 </script>
 </html>

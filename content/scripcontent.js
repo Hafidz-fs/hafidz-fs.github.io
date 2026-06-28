@@ -51,7 +51,7 @@ submitBtn.addEventListener("click", function(){
   }
   else if(level === "tidak_dimaafkan"){
     statusImage.src = "../images/sadham.png";
-    reply = "Kenapaa..? soo saddd";
+    reply = "Kenapaa..? soo saddd  password: Happysad";
   }
   else if(level === "tidak_mau"){
     statusImage.src = "../images/pasraham.png";
@@ -72,12 +72,12 @@ deleteBtn.addEventListener("click", function(){
   statusImage.src = "sad.png";
 });
 
-function checkPassword(page){
-  const password = prompt("Masukkan password:");
+function checkPassword(page, correctPassword) {
+  const passwordInput = prompt("Masukkan password:");
 
-  if(password === "Happycis"){
-    window.location.href = page;
+  if (passwordInput === correctPassword) {
+    window.location.href = page; 
   } else {
-    alert("Password salah!");
+    alert("Password salah!"); 
   }
 }

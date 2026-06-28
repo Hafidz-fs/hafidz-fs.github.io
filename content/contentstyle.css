@@ -160,6 +160,16 @@ textarea{
     align-items: center;
   }
 
+  nav{
+    margin-left: 200px;
+}
+nav ul{
+    gap:20px;
+}
+nav a{
+    font-size: 12px;
+    padding: 5px;
+}
   @media (max-width:768px){
   .navbar-cismit{
     flex-direction: column;

@@ -6,14 +6,15 @@
 }
 
 body{
-    background: url(./images/bg-hero.jpg);
+    background: url(../images/bg-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 nav{
     width:100%;
     padding:25px;
-    margin-left: 550px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul{
@@ -84,5 +85,52 @@ img {
     margin-top:30px;
     font-size:18px;
     color: rgb(151, 0, 33);
-    padding: 0 140px;
+    padding: 0 140px 30px;
+}
+
+@media (max-width: 768px){
+
+nav ul{
+    gap:20px;
+}
+nav a{
+    font-size: 12px;
+    padding: 5px;
+}
+
+  .container{
+    gap:20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+h3 {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+.card{
+    width:200px;
+    height:240px;
+}
+
+.card video{
+    width:150px;
+    height:150px;
+}
+
+.cismit,
+    .card{
+        margin:0 auto;
+    }
+
+.desc{
+    font-size:15px;
+    padding: 0 70px 15px;
+}
 }

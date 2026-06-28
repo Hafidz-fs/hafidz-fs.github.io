@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cismit</title>
+    <link rel="stylesheet" href="./mainstyle.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/content/content.html">Home</a></li>
+      <li><a href="../sidemain/mainhap.html">Vidio</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="cismit">
+      <h1>Cismit</h1>
+      <img src="../images/sadham.png" alt="Cismit">
+    </div>
+    <div class="card">
+      <iframe 
+        style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/7vGuf3Y35N4wmASOKLUVVU?utm_source=generator" 
+        width="100%" 
+        height="180" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+    </iframe>
+      <h3>"sad ending</h3>
+    </div>
+    </div>
+    <p class="desc">
+        "Ada rasa sakit yang tidak berasal dari perpisahan, melainkan dari kenyataan bahwa orang yang paling kita cintai tidak lagi bisa melihat kita dengan hati yang sama. Aku telah meminta maaf dengan seluruh ketulusanku, tetapi aku juga belajar bahwa memaafkan adalah hakmu, bukan kewajibanmu. Jika suatu hari nanti kamu tetap memilih pergi, aku akan mengingatmu sebagai seseorang yang pernah menjadi rumah, meskipun pada akhirnya aku tidak lagi memiliki tempat untuk pulang."
+    </p>
+</body>
+<script>
+    const video = document.getElementById("video");
+
+    video.addEventListener("loadeddata", () => {
+        video.playbackRate = 0.8;
+    });
+</script>
+</html>
